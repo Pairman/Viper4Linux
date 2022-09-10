@@ -73,7 +73,8 @@ There is also a package for the stable releases of the GUI (https://github.com/T
 
   For Fedora:  
   
-  (I don't currently support Fedora. That said, there are reports of it working. Thobi from the Telegram group mentioned needing the gstreamer1-plugins-base-devel.x86_64 package.)  
+    sudo dnf groupinstall "Development Tools" "Development Libraries"
+    sudo dnf install gstreamer1-devel gstreamer1-plugins-base-devel 
 
 ### Step 2:  
   Get this software and their software, and more of their software...  
@@ -97,7 +98,10 @@ There is also a package for the stable releases of the GUI (https://github.com/T
     sudo cp libgstviperfx.so /usr/lib/x86_64-linux-gnu/gstreamer-1.0/  
   Arch:  
   
-    sudo cp libgstviperfx.so /usr/lib/gstreamer-1.0/  
+    sudo cp libgstviperfx.so /usr/lib/gstreamer-1.0/ 
+  Fedora:  
+  
+    sudo cp libgstviperfx.so /usr/lib64/gstreamer-1.0/ 
     
   The rest of it:  
   
